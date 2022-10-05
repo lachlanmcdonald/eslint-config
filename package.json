@@ -1,6 +1,6 @@
 {
   "name": "@lachlanmcdonald/eslint-config-eslint",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "main": "index.js",
   "files": [
     "index.js",
@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/lachlanmcdonald/eslint-config-eslint#readme",
   "dependencies": {
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-plugin-import": "^2.25.4"
   },
   "devDependencies": {
-    "eslint": "^7.16.0"
+    "eslint": "^8.11.0"
   }
 }
