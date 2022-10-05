@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/lachlanmcdonald/eslint-config-eslint#readme",
   "dependencies": {
-    "eslint-plugin-import": "^2.25.4"
+    "eslint-plugin-import": "^2.26.0"
   },
   "devDependencies": {
-    "eslint": "^8.11.0"
+    "eslint": "^8.24.0"
   }
 }
