@@ -8,13 +8,13 @@
 Remove any old package:
 
 ```sh
-npm uninstall @lachlanmcdonald/eslint-config-eslint
+pnpm rm @lachlanmcdonald/eslint-config-eslint
 ```
 
 Install latest version:
 
 ```sh
-npm uninstall @lmcd/eslint-config
+pnpm i --D @lmcd/eslint-config
 ```
 
 Add to `.eslintrc.json` or similar:
