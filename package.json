@@ -1,5 +1,5 @@
 {
-  "name": "@lmcd/eslint-config-eslint",
+  "name": "@lmcd/eslint-config",
   "version": "0.5.0",
   "main": "index.js",
   "files": [
