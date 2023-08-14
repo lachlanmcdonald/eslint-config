@@ -44,30 +44,36 @@ module.exports = {
 		"no-multi-spaces": ["error", {
 			ignoreEOLComments: true,
 		}],
-		"no-multi-str": "warn",
+		"no-multi-str": "error",
 		"no-new-func": "error",
-		"no-new-wrappers": "warn",
+		"no-new-wrappers": "error",
 		"no-octal-escape": "error",
-		"no-proto": "warn",
+		"no-proto": "error",
 		"no-script-url": "error",
 		"no-self-compare": "error",
-		"no-sequences": "warn",
-		"no-throw-literal": "warn",
+		"no-sequences": "error",
+		"no-throw-literal": "error",
 		"no-unused-expressions": "warn",
-		"no-useless-call": "error",
+		"no-useless-call": "warn",
 		"no-useless-concat": "warn",
 		"no-void": "error",
 		"prefer-promise-reject-errors": "warn",
 		"radix": "error",
 		"require-await": "warn",
-		"require-unicode-regexp": "warn",
+		"require-unicode-regexp": "off",
 		"vars-on-top": "warn",
 		"wrap-iife": ["error", "outside"],
 		"yoda": "error",
 
+		// Labels
+		"no-labels": "error",
+		"no-extra-label": "error",
+		"no-unused-labels": "error",
+		"no-label-var": "error",
+
 		// Avoiding pitfalls
-		"no-promise-executor-return": "warn",
-		"no-return-assign": "warn",
+		"no-promise-executor-return": "error",
+		"no-return-assign": "error",
 		"no-constructor-return": "error",
 
 		// Deviation from eslint:recommended
@@ -170,7 +176,7 @@ module.exports = {
 			consistent: true
 		}],
 		"one-var": ["warn", {
-			var: "consecutive",
+			var: "never",
 			let: "never",
 			const: "never",
 			separateRequires: true,
