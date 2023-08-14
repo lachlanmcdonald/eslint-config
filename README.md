@@ -14,7 +14,7 @@ pnpm rm @lachlanmcdonald/eslint-config-eslint
 Install latest version:
 
 ```sh
-pnpm i --D @lmcd/eslint-config
+pnpm i -D @lmcd/eslint-config
 ```
 
 Add to `.eslintrc.json` or similar:
