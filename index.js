@@ -89,7 +89,7 @@ module.exports = {
 		"no-use-before-define": "warn",
 
 		// Node.js
-		"callback-return": "warn",
+		"callback-return": "off",
 		"global-require": "error",
 		"no-buffer-constructor": "error",
 		"no-mixed-requires": "error",
@@ -121,7 +121,7 @@ module.exports = {
 		"func-style": ["warn", "expression"],
 		"function-paren-newline": ["warn", "never"],
 		"implicit-arrow-linebreak": ["error", "beside"],
-		"indent": ["warn", "tab"],
+		"indent": ["warn", "tab", { "SwitchCase": 1 }],
 		"key-spacing": ["warn", {
 			mode: "strict",
 			beforeColon: false,
