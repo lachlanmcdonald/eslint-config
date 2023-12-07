@@ -1,7 +1,7 @@
 # @lmcd/eslint-config
 
-[![npm version](https://badge.fury.io/js/%40lachlanmcdonald%2Feslint-config-eslint.svg)](https://badge.fury.io/js/%40lachlanmcdonald%2Feslint-config-eslint)
-[![License](https://img.shields.io/npm/l/@lachlanmcdonald/eslint-config-eslint)](https://github.com/lachlanmcdonald/eslint-config-eslint/blob/master/LICENSE)
+[![npm version](https://badge.fury.io/js/%40lachlanmcdonald%2Feslint-config.svg)](https://badge.fury.io/js/%40lachlanmcdonald%2Feslint-config)
+[![License](https://img.shields.io/npm/l/@lachlanmcdonald/eslint-config)](https://github.com/lachlanmcdonald/eslint-config/blob/master/LICENSE)
 
 > Opinionated [ESLint](https://eslint.org/) configuration.
 
@@ -15,6 +15,7 @@ Install latest version:
 
 ```sh
 pnpm i -D @lmcd/eslint-config
+pnpm i -D @typescript-eslint
 ```
 
 Add to `.eslintrc.json` or similar:
@@ -22,7 +23,10 @@ Add to `.eslintrc.json` or similar:
 ```json
 {
     "extends": [
-	    "@lmcd/eslint-config"
-    ]
+	    "@lmcd/eslint-config",
+    ],
+    "plugins": [
+        "@stylistic",
+    ],
 }
 ```
