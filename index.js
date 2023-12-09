@@ -140,7 +140,7 @@ module.exports = {
 		'@stylistic/no-confusing-arrow': ['warn', {
 			allowParens: true,
 		}],
-		'@stylistic/no-extra-parens': ['off'],
+		'@stylistic/no-extra-parens': 'off',
 		'@stylistic/no-extra-semi': ['warn'],
 		'@stylistic/no-floating-decimal': ['error'],
 		'@stylistic/no-mixed-operators': ['warn'],
@@ -172,7 +172,7 @@ module.exports = {
 		'@stylistic/semi': ['warn', 'always'],
 		'@stylistic/semi-spacing': ['warn', {
 			before: false,
-			after: false,
+			after: true,
 		}],
 		'@stylistic/semi-style': ['warn', 'last'],
 		'@stylistic/space-before-blocks': ['warn', 'always'],
