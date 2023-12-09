@@ -23,7 +23,7 @@ Add to `.eslintrc.json` or similar:
 ```json
 {
     "extends": [
-	    "@lmcd/eslint-config",
+        "@lmcd/eslint-config",
     ],
     "plugins": [
         "@stylistic",
