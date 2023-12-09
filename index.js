@@ -140,16 +140,7 @@ module.exports = {
 		'@stylistic/no-confusing-arrow': ['warn', {
 			allowParens: true,
 		}],
-		'@stylistic/no-extra-parens': ['warn', 'all', {
-			conditionalAssign: true,
-			returnAssign: true,
-			nestedBinaryExpressions: true,
-			ternaryOperandBinaryExpressions: true,
-			enforceForArrowConditionals: true,
-			enforceForSequenceExpressions: true,
-			enforceForNewInMemberExpressions: true,
-			enforceForFunctionPrototypeMethods: true,
-		}],
+		'@stylistic/no-extra-parens': ['off'],
 		'@stylistic/no-extra-semi': ['warn'],
 		'@stylistic/no-floating-decimal': ['error'],
 		'@stylistic/no-mixed-operators': ['warn'],
