@@ -15,7 +15,7 @@ Install latest version:
 
 ```sh
 pnpm i -D @lmcd/eslint-config
-pnpm i -D @typescript-eslint
+pnpm i -D @stylistic/eslint-plugin
 ```
 
 Add to `.eslintrc.json` or similar:
