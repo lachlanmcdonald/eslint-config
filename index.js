@@ -100,7 +100,7 @@ module.exports = {
 		}],
 		'@stylistic/comma-style': ['warn', 'last'],
 		'@stylistic/computed-property-spacing': ['warn', 'never'],
-		'@stylistic/dot-location': ['warn', 'object'],
+		'@stylistic/dot-location': ['warn', 'property'],
 		'@stylistic/eol-last': ['warn', 'always'],
 		'@stylistic/function-call-argument-newline': ['warn', 'never'],
 		'@stylistic/function-call-spacing': ['warn', 'never'],
