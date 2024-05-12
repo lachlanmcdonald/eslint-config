@@ -22,11 +22,30 @@ Add to `.eslintrc.json` or similar:
 
 ```json
 {
-    "extends": [
-        "@lmcd/eslint-config"
-    ],
-    "plugins": [
-        "@stylistic"
-    ]
+	"extends": [
+		"@lmcd/eslint-config"
+	],
+	"plugins": [
+		"@stylistic"
+	]
+}
+```
+
+Additionally:
+
+```json
+{
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	}
+}
+```
+
+In `.vscode/settings.json`:
+
+```json
+{
+	"editor.formatOnSave": true
 }
 ```
