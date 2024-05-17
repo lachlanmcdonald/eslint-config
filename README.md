@@ -1,7 +1,7 @@
 # @lmcd/eslint-config
 
 [![npm version](https://badge.fury.io/js/@lmcd%2Feslint-config.svg)](https://badge.fury.io/js/@lmcd%2Feslint-config)
-[![License](https://img.shields.io/npm/l/@lmcd/eslint-config)](https://github.com/lachlanmcdonald/eslint-config/blob/master/LICENSE)
+![License](https://img.shields.io/github/license/lachlanmcdonald/eslint-config)
 
 > Opinionated [ESLint](https://eslint.org/) configuration.
 
