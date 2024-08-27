@@ -5,7 +5,7 @@
 
 > Opinionated [ESLint](https://eslint.org/) configuration.
 
-Remove any old package:
+Remove any old packages:
 
 ```sh
 pnpm rm @lachlanmcdonald/eslint-config-eslint
@@ -14,38 +14,37 @@ pnpm rm @lachlanmcdonald/eslint-config-eslint
 Install latest version:
 
 ```sh
-pnpm i -D @lmcd/eslint-config
+pnpm i -D eslint
+pnpm i -D globals
+pnpm i -D @eslint/js
 pnpm i -D @stylistic/eslint-plugin
+pnpm i -D @lmcd/eslint-config
 ```
 
-Add to `.eslintrc.json` or similar:
+Add to `eslint.config.js` or similar:
 
-```json
-{
-	"extends": [
-		"@lmcd/eslint-config"
-	],
-	"plugins": [
-		"@stylistic"
-	]
-}
-```
+```js
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
+import { rules } from '@lmcd/eslint-config';
 
-Additionally:
-
-```json
-{
-	"parserOptions": {
-		"ecmaVersion": "latest",
-		"sourceType": "module"
-	}
-}
-```
-
-In `.vscode/settings.json`:
-
-```json
-{
-	"editor.formatOnSave": true
-}
+export default [
+	pluginJs.configs.recommended,
+	{
+		rules,
+		languageOptions: {
+			ecmaVersion: 'latest',
+			sourceType: 'module',
+			globals: {
+				...globals.node,
+				...globals.browser,
+			},
+		},
+        ignores: ['dist/*'],
+        plugins: {
+            '@stylistic': stylistic,
+        },
+	},
+];
 ```

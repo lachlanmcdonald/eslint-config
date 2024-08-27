@@ -2,6 +2,7 @@
   "name": "@lmcd/eslint-config",
   "version": "0.6.4",
   "main": "index.js",
+  "type": "module",
   "files": [
     "index.js",
     "LICENSE",
@@ -9,7 +10,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -19,13 +21,12 @@
     "url": "https://github.com/lachlanmcdonald/eslint-config-eslint/issues"
   },
   "homepage": "https://github.com/lachlanmcdonald/eslint-config-eslint#readme",
-  "dependencies": {
-    "eslint-plugin-import": "^2.29.0"
-  },
-  "devDependencies": {
-    "@stylistic/eslint-plugin": "^1.5.0",
-    "eslint": "^8.55.0"
-  },
   "description": "Opinionated ESLint configuration.",
-  "author": "Lachlan McDonald <https://github.com/lachlanmcdonald>"
+  "author": "Lachlan McDonald <https://github.com/lachlanmcdonald>",
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@stylistic/eslint-plugin": "^2.6.4",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0"
+  }
 }
