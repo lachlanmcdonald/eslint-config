@@ -30,21 +30,21 @@ import stylistic from '@stylistic/eslint-plugin';
 import { rules } from '@lmcd/eslint-config';
 
 export default [
-	pluginJs.configs.recommended,
-	{
-		rules,
-		languageOptions: {
-			ecmaVersion: 'latest',
-			sourceType: 'module',
-			globals: {
-				...globals.node,
-				...globals.browser,
-			},
-		},
-        ignores: ['dist/*'],
-        plugins: {
-            '@stylistic': stylistic,
-        },
-	},
+    pluginJs.configs.recommended,
+    {
+      rules,
+      languageOptions: {
+          ecmaVersion: 'latest',
+          sourceType: 'module',
+          globals: {
+            ...globals.node,
+            ...globals.browser,
+          },
+      },
+      ignores: ['dist/*'],
+      plugins: {
+          '@stylistic': stylistic,
+      },
+    },
 ];
 ```
