@@ -32,19 +32,18 @@ import { rules } from '@lmcd/eslint-config';
 export default [
     pluginJs.configs.recommended,
     {
-      rules,
-      languageOptions: {
-          ecmaVersion: 'latest',
-          sourceType: 'module',
-          globals: {
-            ...globals.node,
-            ...globals.browser,
-          },
-      },
-      ignores: ['dist/*'],
-      plugins: {
-          '@stylistic': stylistic,
-      },
+        rules,
+        plugins: {
+            '@stylistic': stylistic,
+        },
+        languageOptions: {
+            ecmaVersion: 'latest',
+            sourceType: 'module',
+            globals: {
+                ...globals.node,
+                ...globals.browser,
+            },
+        },
     },
 ];
 ```
