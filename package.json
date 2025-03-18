@@ -24,9 +24,9 @@
   "description": "Opinionated ESLint configuration.",
   "author": "Lachlan McDonald <https://github.com/lachlanmcdonald>",
   "devDependencies": {
-    "@eslint/js": "^9.9.1",
-    "@stylistic/eslint-plugin": "^2.6.4",
-    "eslint": "^9.9.1",
-    "globals": "^15.9.0"
+    "@eslint/js": "^9.22.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0"
   }
 }

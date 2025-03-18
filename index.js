@@ -1,7 +1,6 @@
 export const rules = {
-	// Disable deprecated rules
-	// (for the most part, these rules have been replaced by @stylistic
-	// and set in the following section)
+	// Disable deprecated rules (for the most part, these rules have been replaced by
+	// @stylistic and set in the following section)
 	'array-bracket-newline': 'off',
 	'array-bracket-spacing': 'off',
 	'array-element-newline': 'off',
