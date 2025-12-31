@@ -158,7 +158,7 @@ export const rules = {
 	'@stylistic/quote-props': ['warn', 'consistent-as-needed'],
 	'@stylistic/quotes': ['warn', 'single', {
 		avoidEscape: true,
-		allowTemplateLiterals: 'avoidEscape',
+		allowTemplateLiterals: 'never',
 	}],
 	'@stylistic/rest-spread-spacing': ['error', 'never'],
 	'@stylistic/semi': ['warn', 'always'],
