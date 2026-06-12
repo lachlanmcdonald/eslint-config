@@ -70,7 +70,11 @@ export const rules = {
 	'yield-star-spacing': 'off',
 
 	// Stylistic
+	'@stylistic/array-bracket-newline': ['warn', 'consistent'],
 	'@stylistic/array-bracket-spacing': ['warn', 'never'],
+	'@stylistic/arrow-parens': ['warn', 'as-needed', {
+		requireForBlockBody: true,
+	}],
 	'@stylistic/arrow-spacing': ['warn', {
 		before: true,
 		after: true,
@@ -82,20 +86,18 @@ export const rules = {
 	'@stylistic/comma-dangle': ['warn', {
 		arrays: 'always-multiline',
 		objects: 'always-multiline',
-		imports: 'never',
-		exports: 'never',
-		functions: 'never',
 	}],
 	'@stylistic/comma-spacing': ['warn', {
 		before: false,
 		after: true,
 	}],
 	'@stylistic/comma-style': ['warn', 'last'],
+	'@stylistic/curly-newline': ['warn', 'always'],
 	'@stylistic/computed-property-spacing': ['warn', 'never'],
-	'@stylistic/dot-location': ['warn', 'property'],
+	'@stylistic/dot-location': ['error', 'property'],
 	'@stylistic/eol-last': ['warn', 'always'],
 	'@stylistic/function-call-argument-newline': ['warn', 'never'],
-	'@stylistic/function-call-spacing': ['warn', 'never'],
+	'@stylistic/function-call-spacing': ['error', 'never'],
 	'@stylistic/function-paren-newline': ['warn', 'never'],
 	'@stylistic/generator-star-spacing': ['warn', {
 		before: false,
