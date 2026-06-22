@@ -48,3 +48,16 @@ export default [
     },
 ];
 ```
+
+Optionally, in `.vscode/settings.json`:
+
+```json
+{
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "file",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "always",
+		"source.organizeImports": "always"
+	}
+}
+```
